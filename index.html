@@ -1,27 +1,38 @@
-<!DOCTYPE HTML>
-<HTML>
-	<HEAD>
-		<TITLE> AKSHAY KRISHNA PAREMAL BALAKRISHNAN
-		</TITLE>
-	</HEAD>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Assignment Tracker 2025</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div class="main-container">
+    <header class="header">
+      <img src="https://i.pinimg.com/736x/42/b3/80/42b380c5d8b884f1cef1199df34652eb.jpg" alt="AI Assistant" class="ai-img" />
+      <h1 class="title">AI Assignment Tracker</h1>
+      <p class="subtitle">Smart. Fast. Effortless.</p>
+    </header>
 
-	<BODY BGCOLOR="0" TEXT="BLUE">
-	<H1 ALIGN= CENTER><U>ABOUT ME</U>
-	</H>
-	<P ALIGN= LEFT> I RESIDE IN LATVIA.<BR>I AM PURSUING A DEGREE IN COMPUTER SYSTEMS. <BR>I’M CURRENTLY IN MY FIFTH SEMESTER. <BR>I HAVE A PASSION FOR MACHINE LEARNING.<BR>LIFE IS GREAT. </P>
-<BR>
+    <section class="auth-buttons">
+      <button id="login with google">Login with Google</button>
+      <button id="logoutBtn">Logout</button>
+      <p id="userEmail">Not logged in</p>
+    </section>
 
-<H1 ALIGN= CENTER> THIS IS H1</H1><BR>
-<H2 ALIGN= CENTER> THIS IS H2</H2><BR>
-<H3 ALIGN= CENTER> THIS IS H3</H3><BR>
-<H4 ALIGN= CENTER> THIS IS H4</H4><BR>
-<H5 ALIGN= CENTER> THIS IS H5</H5><BR>
-<H6 ALIGN= CENTER> THIS IS H6</H6>
+    <form id="assignmentForm" class="glass-card">
+      <input type="text" id="title" placeholder="Assignment Title" required />
+      <input type="text" id="subject" placeholder="Subject" required />
+      <input type="date" id="dueDate" required />
+      <button type="submit">Add Assignment</button>
+    </form>
 
-	</BODY>
-</HTML>
-
- 
- 
-  
- 
+    <div id="assignmentList" class="assignment-list glass-card">
+      <!-- Assignments will appear here -->
+    </div>
+    <script type="module" src="path/to/your/javascript-file.js"></script>
+  <script src="wdwwd.js" defer></script>
+</body>
+</html>
