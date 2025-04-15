@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - PC Store</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .image-card {
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      background-color: #f9f9f9;
+    }
+
+    .image-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .image-card p {
+      margin: 10px 0;
+      font-weight: 500;
+    }
+
+    .image-card button {
+      background-color: #007BFF;
+      color: white;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .image-card button:hover {
+      background-color: #0056b3;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="home page.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <header>
+    <h1>PC Gallery</h1>
+  </header>
+  
+  <div class="image-grid">
+    <div class="image-card">
+      <img src="https://i.pinimg.com/474x/ab/b8/e1/abb8e126f6a496b2eb8cec762a891f05.jpg" alt="Gaming PC 1">
+      <p>RGB Beast Gaming PC</p>
+      <button>View Details</button>
+    </div>
+    <div class="image-card">
+      <img src="https://i.pinimg.com/474x/a7/a7/d2/a7a7d2e78d9561fd6a8482431e13d8e6.jpg" alt="Workstation PC">
+      <p>4K Editing Workstation</p>
+      <button>View Details</button>
+    </div>
+    <div class="image-card">
+      <img src="https://i.pinimg.com/474x/74/f5/aa/74f5aa79b1c80f467741c7f6503171bb.jpg" alt="RGB Gaming PC">
+      <p>ARGB Tower Build</p>
+      <button>View Details</button>
+    </div>
+    <div class="image-card">
+      <img src="https://i.pinimg.com/474x/06/54/2d/06542df3d932b3371b4909d575339166.jpg" alt="Compact Build">
+      <p>Compact Powerhouse</p>
+      <button>View Details</button>
+    </div>
+    <div class="image-card">
+      <img src="https://i.pinimg.com/736x/e3/66/8f/e3668f4cf14fa817484e5ff173526c16.jpg" alt="Water Cooled System">
+      <p>Liquid-Cooled Monster</p>
+      <button>View Details</button>
+    </div>
+    <div class="image-card">
+      <img src="https://i.pinimg.com/736x/6c/4d/8f/6c4d8f2a85aa90ec1b66802bf4afbbe0.jpg" alt="Mini ITX Build">
+      <p>Mini ITX Sleeper</p>
+      <button>View Details</button>
+    </div>
+    <div class="image-card">
+      <img src="https://i.pinimg.com/474x/93/51/70/935170a5400c8b8dd1cb3d365befc50b.jpg" alt="High-End Gaming Rig">
+      <p>High-End Battle Station</p>
+      <button>View Details</button>
+    </div>
+    <div class="image-card">
+      <img src="https://i.pinimg.com/474x/e9/32/f6/e932f62985add167be9662eb526fb508.jpg" alt="Professional Workstation">
+      <p>Studio-Grade PC</p>
+      <button>View Details</button>
+    </div>
+    <div class="image-card">
+      <img src="https://i.pinimg.com/474x/d4/a2/3b/d4a23be31f58840709898b638198a09f.jpg" alt="RGB Setup">
+      <p>Full RGB Setup</p>
+      <button>View Details</button>
+    </div>
+    <div class="image-card">
+      <img src="https://i.pinimg.com/736x/ae/18/0e/ae180eecf503710603ab87b84290a3a9.jpg" alt="Custom Loop PC">
+      <p>Custom Loop Showpiece</p>
+      <button>View Details</button>
+    </div>
+    <div class="image-card">
+      <img src="https://i.pinimg.com/474x/17/b6/8f/17b68fbcfaa3598523a3231ced3c78aa.jpg" alt="Sleek Black Build">
+      <p>Stealth Black PC</p>
+      <button>View Details</button>
+    </div>
+    <div class="image-card">
+      <img src="https://i.pinimg.com/474x/fc/3a/55/fc3a55f86721f27a8f0aa51ddb40ee9b.jpg" alt="All-White PC">
+      <p>Snow White Build</p>
+      <button>View Details</button>
+    </div>
+    <div class="image-card">
+      <img src="https://i.pinimg.com/736x/3c/67/a1/3c67a188d01c23f8f6f0b9d3c4d9aee4.jpg" alt="Dual Monitor Setup">
+      <p>Dual Monitor Station</p>
+      <button>View Details</button>
+    </div>
+    <div class="image-card">
+      <img src="https://i.pinimg.com/474x/34/b2/a1/34b2a1466f40ba326a784e578463c3d1.jpg" alt="Open Air Case Build">
+      <p>Open Frame Rig</p>
+      <button>View Details</button>
+    </div>
+    <div class="image-card">
+      <img src="https://i.pinimg.com/474x/5d/f5/6b/5df56b4232a7f5e73d6ef113fa754ce6.jpg" alt="Silent Workstation">
+      <p>Whisper-Quiet Workhorse</p>
+      <button>View Details</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 PC Store. All rights reserved.</p>
+  </footer>
+</body>
+</html>

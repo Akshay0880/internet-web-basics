@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - PC Store</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Ensures footer stays at bottom */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Inter', sans-serif;
+      display: flex;
+      flex-direction: column;
+    }
+
+    body {
+      flex: 1;
+    }
+
+    .content {
+      flex: 1;
+      padding: 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      padding: 10px;
+      background-color: #f4f4f4;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    .featured-products {
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .product-card {
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 8px;
+      flex: 1;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 10px;
+      padding: 20px;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="home page.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <header>
+    <h1>Trex The PC Store</h1>
+  </header>
+  
+  <div class="content">
+    <h2>Premium Custom PCs</h2>
+    <p>Discover our collection of high-performance custom-built computers tailored for gaming, content creation, and professional work.</p>
+    
+    <div class="featured-products">
+      <div class="product-card">
+        <h3>Quantum X Gaming PC</h3>
+        <p>Ultimate gaming performance with RTX 4090 and Intel i9</p>
+      </div>
+      <div class="product-card">
+        <h3>Creator Pro Workstation</h3>
+        <p>Perfect for 3D rendering and video editing</p>
+      </div>
+    </div>
+
+    <p>At Trex, we believe in the power of custom solutions. Every PC is built with precision and care to meet your unique needs.</p>
+    <p>Whether you're a hardcore gamer or a digital artist, we offer configurations that deliver exceptional performance and reliability.</p>
+    <p>Our team uses only premium components from trusted brands like NVIDIA, AMD, Intel, and Corsair.</p>
+    <p>We offer full customer support before and after purchase, ensuring your setup is smooth and hassle-free.</p>
+    <p>With sleek designs and cutting-edge cooling solutions, our PCs not only perform great—they look stunning too.</p>
+
+    <h3>Why Choose Trex PC Store?</h3>
+    <ul>
+      <li>Custom-built systems for all budgets</li>
+      <li>Latest generation CPUs and GPUs</li>
+      <li>Professional cable management</li>
+      <li>High-performance cooling options</li>
+      <li>Upgrade-friendly configurations</li>
+      <li>Fast and reliable nationwide delivery</li>
+      <li>Thoroughly tested before shipping</li>
+      <li>Responsive and knowledgeable support team</li>
+      <li>Warranty and return policy for peace of mind</li>
+      <li>Stylish and functional PC designs</li>
+    </ul>
+  </div>
+  
+  <div class="image-grid">
+    <img src="https://i.pinimg.com/474x/56/d7/fc/56d7fc650edc59dc6c7962495abaab65.jpg" alt="Gaming PC">
+    <img src="https://i.pinimg.com/474x/09/21/f0/0921f0cfb65b0c840ee17d0d4b6d67a0.jpg" alt="Workstation PC">
+    <img src="https://i.pinimg.com/474x/fa/bd/60/fabd6044ea3d421e1d7aebd97ccc0cd5.jpg" alt="RGB PC">
+    <img src="https://i.pinimg.com/474x/ae/18/0e/ae180eecf503710603ab87b84290a3a9.jpg" alt="Compact PC">
+    <img src="https://i.pinimg.com/474x/6b/7b/ce/6b7bce3aa0b1cd24180628b88a8a0ead.jpg" alt="Compact Build">
+  </div>
+  
+  <footer>
+    <p>&copy; 2025 PC Store. All rights reserved.</p>
+  </footer>
+</body>
+</html>
