@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Task Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .info-bar {
+      background-color: #2c3e50;
+      color: white;
+      padding: 10px;
+      width: 60%;
+      margin: 20px auto;
+      border-radius: 5px;
+    }
+
+    .task-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .task-button {
+      background-color: #2c3e50;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 16px;
+      min-width: 120px;
+    }
+
+    .label {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 15px 0 5px;
+    }
+
+    .project-info {
+      text-align: left;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 40px auto;
+      width: 80%;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    img {
+      max-width: 100%;
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+
+    .screenshot-title {
+      font-size: 24px;
+      margin-top: 30px;
+      color: #2c3e50;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    #imageUpload {
+      margin-top: 15px;
+    }
+
+    #uploadedImagePreview img {
+      max-width: 60%;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="label">STUDENT NAME : <span id="student-name">AKSHAY KRISHNA PAREMAL BALAKRISHNAN</span></div>
+  <div class="label">CURRENT DATE : <span id="current-date">13.06.2025</span></div>
+  <div class="label">SUBJECT NAME : <span id="subject-name">WEB TECHNOLOGIES</span></div>
+
+  <div class="info-bar">INFORMATION ABOUT ME : I am a passionate student who enjoys learning new technologies, especially in web development and programming.</div>
+
+  <div class="label">Task Details :</div>
+
+  <!-- TASK BUTTONS -->
+  <div class="task-container">
+    <button class="task-button" onclick="task1()">Task 1</button>
+    <button class="task-button" onclick="task2()">Task 2</button>
+    <button class="task-button" onclick="task3()">Task 3</button>
+    <button class="task-button" onclick="task4()">Task 4</button>
+    <button class="task-button" onclick="task5()">Task 5</button>
+    <button class="task-button" onclick="task6()">Task 6</button>
+    <button class="task-button" onclick="task7()">Task 7</button>
+    <button class="task-button" onclick="task8()">Task 8</button>
+    <button class="task-button" onclick="task9()">Task 9</button>
+    <button class="task-button" onclick="task10()">Task 10</button>
+  </div>
+
+  <!-- PROJECT INFO SECTION -->
+  <div class="project-info">
+    <h2>Mini Project Title : ASSIGNMENT TRACKER</h2>
+    <h3>Information : WE CAN EASILY PUT REMINDER FOR OUR ASSIGNMENTS AND GET EMAIL REMINDER BEFORE THE DEADLINES.</h3>
+    <p>Prepare a concise presentation covering the following points:</p>
+    <ol>
+      <li><strong>Problem Statement:</strong> Describe the problem your project addresses.</li>
+      <li><strong>Objective:</strong> Explain the purpose of your project.</li>
+      <li><strong>Goal:</strong> Define the end goals and intended outcomes of your project.</li>
+      <li><strong>Result/Output:</strong> Outline the expected or actual results.</li>
+      <li><strong>Technology Used:</strong> List the tools, languages, or frameworks you used.</li>
+      <li><strong>User Audience:</strong> Identify the target audience or users of your project.</li>
+      <li><strong>Impact on Society:</strong> Discuss how your project could benefit society or people in general.</li>
+    </ol>
+
+    <div class="screenshot-title">SCREENSHOTS</div>
+    <img src="Screenshot 2025-06-13 120731" alt="Project Screenshot">
+
+    <div class="label" style="margin-top: 30px;">Set A :</div>
+
+    <div class="label" style="margin-top: 40px;">Upload Your Screenshot:</div>
+    <input type="file" id="imageUpload" accept="image/*">
+    <div id="uploadedImagePreview"></div>
+  </div>
+
+  <!-- DATE SCRIPT AND TASK SCRIPTS -->
+  <script>
+    document.getElementById("current-date").textContent = new Date().toLocaleDateString();
+
+    // Tasks
+    function task1() {
+      let input = prompt("Enter array elements separated by commas:");
+      if (input) {
+        let arr = input.split(',');
+        alert("Last element: " + arr[arr.length - 1]);
+      }
+    }
+
+    function task2() {
+      let number = prompt("Enter a 10-digit number:");
+      alert(/^\d{10}$/.test(number) ? "Valid number: " + number : "Invalid. Enter exactly 10 digits.");
+    }
+
+    function task3() {
+      let arr = prompt("Enter array items (comma-separated):");
+      let word = prompt("Enter the word to search:");
+      if (arr && word) {
+        let arrList = arr.split(',');
+        let repeated = word.split('').filter((char, i, a) => a.indexOf(char) !== i);
+        alert(`Found: ${arrList.includes(word)}\nRepeated: ${[...new Set(repeated)].join(', ')}`);
+      }
+    }
+
+    function task4() {
+      let str = prompt("Enter a string:");
+      let count = (str.match(/[aeiou]/gi) || []).length;
+      alert("Vowels: " + count);
+    }
+
+    function task5() {
+      let str = prompt("Enter a sentence:");
+      let words = str.split(/\s+/);
+      let longest = words.reduce((a, b) => a.length > b.length ? a : b, "");
+      alert("Longest word: " + longest);
+    }
+
+    function task6() {
+      let str = prompt("Enter a string:");
+      let result = [...str].map(ch =>
+        ch === ch.toUpperCase() ? ch.toLowerCase() : ch.toUpperCase()).join('');
+      alert("Changed case: " + result);
+    }
+
+    function task7() {
+      let str = prompt("Enter a sentence:");
+      let word = prompt("Enter word to locate:");
+      let pos = str.indexOf(word);
+      alert(pos !== -1 ? `Found at index: ${pos}` : "Not found.");
+    }
+
+    function task8() {
+      let arr = prompt("Enter array elements (comma-separated):").split(',');
+      let index = parseInt(prompt("Enter index to splice at:"));
+      let delCount = parseInt(prompt("Enter number of elements to delete:"));
+      let newElem = prompt("Enter new element to insert (optional):");
+      if (newElem) {
+        arr.splice(index, delCount, newElem);
+      } else {
+        arr.splice(index, delCount);
+      }
+      alert("New array: " + arr.join(', '));
+    }
+
+    function task9() {
+      let str = prompt("Enter a string:");
+      let wordCount = str.trim().split(/\s+/).length;
+      let charCount = str.length;
+      let spaceCount = (str.match(/ /g) || []).length;
+      let specialCount = (str.match(/[^a-zA-Z0-9\s]/g) || []).length;
+      alert(`Words: ${wordCount}\nCharacters: ${charCount}\nSpaces: ${spaceCount}\nSpecial Symbols: ${specialCount}`);
+    }
+
+    function task10() {
+      let a = prompt("Enter first value:");
+      let b = prompt("Enter second value:");
+      let op = prompt("Enter operator (+, -, *, /):");
+      let numA = parseFloat(a), numB = parseFloat(b);
+      if (!isNaN(numA) && !isNaN(numB)) {
+        switch (op) {
+          case '+': alert("Result: " + (numA + numB)); break;
+          case '-': alert("Result: " + (numA - numB)); break;
+          case '*': alert("Result: " + (numA * numB)); break;
+          case '/': alert("Result: " + (numB !== 0 ? (numA / numB) : "Division by zero")); break;
+          default: alert("Invalid operator.");
+        }
+      } else {
+        alert("Concatenation result: " + (a + b));
+      }
+    }
+
+    // Image Upload and Preview
+    document.getElementById("imageUpload").addEventListener("change", function (event) {
+      const file = event.target.files[0];
+      if (file && file.type.startsWith("image/")) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+          const imgElement = document.createElement("img");
+          imgElement.src = e.target.result;
+          imgElement.alt = "Uploaded Image";
+
+          const previewDiv = document.getElementById("uploadedImagePreview");
+          previewDiv.innerHTML = ""; // clear previous image
+          previewDiv.appendChild(imgElement);
+        };
+        reader.readAsDataURL(file);
+      } else {
+        alert("Please upload a valid image file.");
+      }
+    });
+  </script>
+
+</body>
+</html>
